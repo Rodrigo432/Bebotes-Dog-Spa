@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.btn-wsp{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    color: green;
+}
+.btn-fb{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    color: blue;
+    
+}
+.btn-ins{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    color: mediumorchid;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+.color-acento{ 
+    color: rgb(35, 138, 190); 
+    font-weight: lighter;
+    font-family: cursive;
+    
+}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: burlywood;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(230, 212, 188);
+
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 15px 25px;
+    font-weight: bold;
+    color: rgba(238, 163, 0, 0.922) ;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#somos .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#caratula{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image:url("imagenes/hero.jpeg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center center;
+    background-color: rgba(238, 163, 0, 0.922) ;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    )
+    ,url("imagenes/hero.jpeg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center center;
+    background-color:black
+}
+
+#hero h1{
+    color: white;
+    font-weight: bold;
+}
+
+#hero button{
+    font-size: 1.75em;
+    background-color: green;
+}
+#hero button:hover{
+    background-color: rgb(31, 222, 31); 
+}
+
+#somos .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-servicios{
+    background-color: rgba(238, 163, 0, 0.922) ;
+    color: white;
+    text-align: center;
+}
+
+#nuestros-servicios .container{
+    padding: 150px 12px;
+}
+
+#nuestros-servicios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-servicios p{
+    display: none;
+}
+
+#nuestros-servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/service1.png");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/service2.png");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("");
+
+}
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+    
+    #somos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align:justify;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos h2{
+        margin-top: 0px;
+    }
+
+    #somos .img-container{
+        background-image: url("imagenes/otro.jpeg");
+        background-size: cover;
+        background-position: center center;
+        height: 600px;
+        width: 500px; 
+        border-radius: 25%;
+        box-shadow: 2px 2px 10px;
+    }
+
+    #nuestros-servicios .servicios{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-servicios p{
+        display: grid;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-servicios h2{
+        font-size: 4em;
+    }
+
+    #nuestros-servicios h3{
+        margin-top: 0;
+    }
+
+    #nuestros-servicios .carta{
+        padding: 50px;
+        background-size: 100% 250px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(180, 139, 51, 0.922) ;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        
+
+    }
+
+    .carta:nth-child(1){
+        background-image:url("imagenes/service1.png");
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/service2.png");
+    }
+
+    .carta:nth-child(3){
+        background-image:url("");
+    }
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
