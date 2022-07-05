@@ -12,34 +12,45 @@ html{
     bottom: 30px;
     color: green;
 }
+.btn-wsp:hover{
+    transform: translateY(-05px);
+}
 .btn-fb{
     width: 55px;
     height: 55px;
     line-height: 55px;
     bottom: 30px;
-    color: blue;
-    
+    color: blue; 
+}
+.btn-fb:hover{
+    transform: translateY(-05px);
 }
 .btn-ins{
     width: 55px;
     height: 55px;
     line-height: 55px;
     bottom: 30px;
-    color: mediumorchid;
-    
+    color: rgb(172, 22, 210); 
 }
-
+.btn-ins:hover{
+    transform: translateY(-05px);
+}
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
-h1{ font-size: 3.5em;}
-h2{ font-size: 2.7em;}
+h1{ 
+    font-size: 3.5em;
+    font-family: cursive;
+    font-weight: bold;
+}
+h2{ 
+    font-size: 2.7em;
+    font-family: cursive;
+}
 h3{ font-size: 2em;}
 p{ font-size: 1.25em;}
-ul{ list-style: none;}
-li{ font-size: 1.25em;}
 
 .color-acento{ 
     color: rgb(35, 138, 190); 
@@ -52,15 +63,15 @@ button{
     font-size: 1.25em;
     font-weight: bold;
     padding: 10px 30px;
-    border-radius: 5px;
-    border: 2px solid rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: white;
-    background-color: burlywood;
+    border: 0px;
+    letter-spacing: 2px;
+    background-color: rgb(228, 206, 15);
     cursor: pointer;
 }
 button:hover{
-    background-color: rgb(230, 212, 188);
+    background:  rgb(255, 196, 0);
+    box-shadow: 0 0 10px rgb(255, 196, 0), 0 0 40px rgb(255, 196, 0), 0 0 80px rgb(255, 196, 0);
 
 }
 .container{
@@ -70,15 +81,24 @@ button:hover{
 
 header{
     background-color: rgb(245,245,245);
-    
+    width: 100%;
+    height: 70px;
+    background: #ffffff; 
+    background: -webkit-linear-gradient(to bottom, #F0CB35, #fffdfd); 
+    background: linear-gradient(to bottom, #F0CB35, #ede5e5); 
+    background-position: center center;
+    background-size:auto;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header .logo{
     margin: 0;
     padding: 15px 25px;
     font-weight: bold;
-    color: rgba(238, 163, 0, 0.922) ;
+    color: rgba(248, 248, 248, 0.922) ;
     font-size: 1.6em;
+    font-family: cursive;
 }
 
 header .container{
@@ -92,19 +112,9 @@ header nav{
     flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
+    margin-top: 32px;
 }
 
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-#somos .container{
-    text-align: center;
-    padding: 200px 12px;
-}
 #caratula{
     display: flex;
     align-items: center;
@@ -112,42 +122,23 @@ header a{
     text-align: center;
     flex-direction: column;
     height: 100vh;
-    background-image:url("imagenes/hero.jpeg");
+    background-image:url("imagenes/.jpeg");
     background-repeat: no-repeat;
     background-size:contain;
     background-position: center center;
-    background-color: rgba(238, 163, 0, 0.922) ;
+    background: #ffffff; 
+    background: -webkit-linear-gradient(to bottom, #F0CB35, #fffdfd);
+    background: linear-gradient(to bottom, #F0CB35, #ede5e5); 
 }
-#hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#caratula h1{
+    font-size: 3.6em;
+    color: white;    
+    text-align: center center;
+}
+#somos .container{
     text-align: center;
-    flex-direction: column;
-    height: 100vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.4),
-        rgba(0,0,0,0.4)
-    )
-    ,url("imagenes/hero.jpeg");
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center center;
-    background-color:black
-}
+    padding: 20px 12px;
 
-#hero h1{
-    color: white;
-    font-weight: bold;
-}
-
-#hero button{
-    font-size: 1.75em;
-    background-color: green;
-}
-#hero button:hover{
-    background-color: rgb(31, 222, 31); 
 }
 
 #somos .container{
@@ -156,13 +147,15 @@ header a{
 }
 
 #nuestros-servicios{
-    background-color: rgba(238, 163, 0, 0.922) ;
+    background: #ffffff;  
+    background: -webkit-linear-gradient(to bottom, #F0CB35, #fffdfd); 
+    background: linear-gradient(to bottom, #F0CB35, #ede5e5); 
     color: white;
     text-align: center;
 }
 
 #nuestros-servicios .container{
-    padding: 150px 12px;
+    padding: 25px 12px;
 }
 
 #nuestros-servicios h2{
@@ -177,12 +170,16 @@ header a{
 #nuestros-servicios .carta{
     background-position: center center;
     background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
     border-radius: 15px;
+    border: solid 1.3px;
+    border-color:rgba(235, 235, 235, 0.836); 
+    padding: 50px 0px;
+    margin: 40px;
+    
 }
 
 .carta:nth-child(1){
+    
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -198,7 +195,7 @@ header a{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("imagenes/service2.png");
+    ,url("imagenes/service1.png");
 }
 
 .carta:nth-child(3){
@@ -207,9 +204,41 @@ header a{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("");
+    ,url("imagenes/service1.png");
 
 }
+
+#final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 86vh;
+    background-image: url("imagenes/hero.jpeg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center center;
+    background-image: linear-gradient(to top, #000000, #4c2728, #924f38, #cd8638, #f0cb35);
+    
+}
+
+#final h1{
+    color: white;
+    font-weight: bold;
+    font-family:cursive;
+}
+
+#final button{
+    font-size: 1.75em;
+    background-color: green;
+}
+#final button:hover{
+    background:  rgb(31, 222, 31);
+    box-shadow: 0 0 10px rgb(31, 222, 31), 0 0 40px rgb(31, 222, 31), 0 0 80px rgb(31, 222, 31);
+
+}
+
 footer{
     background-color: rgb(230,230,230);
 }
@@ -218,10 +247,10 @@ footer p{
     margin: 0;
     padding: 12px;
     color: rgb(100,100,100);
+    
 }
 
 footer .container{
-    height: 90px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -232,7 +261,7 @@ footer .container{
         position: fixed;
         width: 100%;
     }
-
+    
     header .container{
         flex-direction: row;
         justify-content: space-between;
@@ -243,8 +272,12 @@ footer .container{
         padding-bottom: 0;
         padding-right: 20px;
     }
-
-    #hero h1{
+    #caratula h1{
+        font-size: 6em;
+        color: white;    
+        text-align: center center;
+    }
+    #final h1{
         font-size: 5em;
     }
     
@@ -296,14 +329,14 @@ footer .container{
     }
 
     #nuestros-servicios .carta{
+        height: 27em;
+        width: 35em;
         padding: 50px;
-        background-size: 100% 250px;
+        background-size: 100% 320px;
         background-repeat: no-repeat;
-        background-position-y: 0;
-        background-color: rgba(180, 139, 51, 0.922) ;
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-        
-
+        background-position-y: 88px;
+        background-color:rgba(240, 203, 53, 0.151) ;
+        box-shadow: 2px 2px 16px rgba(0,0,0,0.5);
     }
 
     .carta:nth-child(1){
@@ -311,24 +344,19 @@ footer .container{
     }
 
     .carta:nth-child(2){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("imagenes/service2.png");
+        background-image:url("imagenes/service1.png");
     }
 
     .carta:nth-child(3){
-        background-image:url("");
+        background-image:url("imagenes/service1.png");
     }
     footer .container{
-        justify-content: flex-end;
+        justify-content: flex-end;        
     }
 }
 
 @media (min-width: 1200px) {
     #caracteristicas{
-        background-position-x: calc(100vw - 800px);
+        background-position-x: calc(90vw - 800px);
     }
 }
